@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+   <a href="#" class="logo">Moon</a>
+   <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+   </ul>
+  </header>
+  <section>
+    <img src="stars.jpg" id="stars" alt="stars">
+    <h2 id="text">Monn Light</h2>
+    <a href="#sec" class="btn">Explore</a>
+  </section>
+  <div class="sec" id="sec">
+    <h2>What is Moon</h2>
+    <p>A moon is an object that orbits a planet or something else that is not a star. Besides planets, moons can circle dwarf planets, large asteroids, and other bodies. Objects that orbit other objects are also called satellites, so moons are sometimes called natural satellites. People have launched many artificial satellites into orbit around Earth, but these are not considered moons.
+      The planet or body that a moon orbits is called its primary. Just as gravity holds the planets in our solar system in orbit around the sun, gravity also keeps moons in orbit around their primaries. <br> <br> Many moons formed at the same time as their primary. Gravity pulled bits of dust and gas together into larger and larger clumps of material. Eventually, the smaller clump of material (moon) began orbiting the larger clump (primary).
+
+      Some moons formed in other ways. Earth's moon may have formed when an object the size of Mars crashed into the planet. The collision sprayed a huge amount of material into orbit around Earth. This material slowly accumulated into one large body, our moon. Other moons in our solar system were once asteroids, chunks of rock that are too small to be planets. These asteroids came too close to their primary and were pulled into orbit by the force of gravity.
+      
+      Most moons are made of rock, but many also contain a large amount of ice, gas, and other chemicals. Europa, a large moon orbiting Jupiter, has an icy surface that may cover a liquid oceanof water.
+      <br> <br> Some moons have volcanic or geologic activity. For example, scientists have observed volcanic plumes rising 300 kilometers (190 miles) from the surface of Io, another one of Jupiters moons. Other moons, including Earth's moon, show little or no signs of geologic activity, though they may have been more active in the past.
+
+      As of 2010, astronomers had discovered 166 moons circling planets in our solar system. Ninety-nine of these have been discovered since 2000. Jupiter has the most known moons, with 63. Saturn has 60 named moons, Uranus has 27, and Neptune has 13. Mars has just two, and Earth has only one. Venus and Mercury have no moons. <br> <br> Another six moons in our solar system circle dwarf planets. Dwarf planets are planetlike objects that do not fit the full definition of a planet. Pluto is the most famous dwarf planet. Pluto has three moons. Many other moons in our solar system orbit smaller bodies. Because moons are relatively small, none have yet been discovered outside the solar system, but there are likely trillions of moons throughout the universe. </p>
+  </div>
+  <script>
+    let stars = document.getElementById('stars');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      text.style.marginRight = value * 3 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+
+  </script>
+</body>
+</html>
